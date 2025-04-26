@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    font-family: 'Inter';
+}
 .main-container{
     background-color: #121212;
     min-height: 100vh;
@@ -40,9 +43,10 @@
 
 .navbar-links li a {
     text-decoration: none;
-    color: white;;
+    color: #C9C9C9;
     padding: 1rem;
     display: block;
+    font-size: 16px;
 }
 
 .navbar-links li:hover {
@@ -51,7 +55,7 @@
 
 .toggle-button {
     position: absolute;
-    top: .75rem;
+    top: 1rem;
     right: 1rem;
     display: none;
     flex-direction: column;
@@ -63,7 +67,7 @@
 .toggle-button .bar {
     height: 3px;
     width: 100%;
-    background-color: #333;
+    background-color: white;
     border-radius: 10px;
 }
 
@@ -104,4 +108,84 @@
     .brand-title {
         margin-top: 25px;
     }
+}
+
+
+.first-part{
+    position: relative;
+    margin: 150px auto 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    line-height: 1.3;
+}
+.first-part h3{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 4.5em;
+}
+.first-part h2{
+    color: #BB86FC;
+    font-weight: bold;
+    font-size: 6.3rem;
+    text-align: center;
+}
+.first-part h4{
+    color: #03DAC6;
+    font-size: 3.2rem;
+    font-weight: bolder;
+    text-align: center;
+}
+.first-part p{
+    margin-top: 20px;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    max-width: 400px;
+    text-align: center;
+}
+.first-part a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid #2D2B3C;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 50px;
+    background-color: #2D2B3C;
+}
+.first-part a:hover{
+    background-color: #535066;
+}
+
+.about{
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 400px 200px 100px 10px;
+    gap: 200px;
+}
+.about-me{
+    width: 100%;
+    max-width: 400px;
+}
+.portfolio-photo2 img{
+    height: 300px;
+}
+.projects{
+    margin-top: 300px;
+    display: flex;
+    border: 1px solid white;
+    height: 50vh;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.project-card{
+    border: 1px solid red;
+    border-radius: 20px;
+    height: 400px;
+    width: 100%;
 }
