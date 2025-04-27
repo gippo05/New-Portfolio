@@ -21,7 +21,7 @@ window.addEventListener('scroll', () =>{
     const scrolled = window.scrollY
     const picture = document.getElementById('picture')
     const about = document.getElementById('about')
-
+    
     if (scrolled > 200){
         picture.classList.add('slideRight')
         about.classList.add('slideLeft')
@@ -31,6 +31,24 @@ window.addEventListener('scroll', () =>{
         about.classList.remove('slideLeft')
     }
 })
+
+window.addEventListener('scroll', () => {
+    const projects = document.querySelectorAll('.project-card');
+    const scrolled = window.scrollY;
+
+    if (scrolled > 1000) {
+        projects.forEach((project, index) => {
+            setTimeout(() => {
+                project.classList.add('slideUp');
+            }, index * 100); 
+        });
+    } else {
+        projects.forEach(project => {
+            project.classList.remove('slideUp');
+        });
+    }
+});
+
 
 // TYPING ANIMATION
 
