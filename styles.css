@@ -258,7 +258,7 @@ body{
     width: 100%;
     background-color: #2a2a2a;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     color: #ffffff;
 }
 .project-card img{
@@ -267,9 +267,9 @@ body{
     object-fit: cover;
 }
 .project-card:hover {
-    transform: scale(1.03); 
     background-color: #2a2a2a; 
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 20px #BB86FC;
+    z-index: 10;
 }
 .project-card h3 {
     margin-top: 20px;
@@ -479,6 +479,10 @@ span{
         transform: translateY(100px);}
     100% {opacity: 1;
     transform: translateY(0px);}
+}
+@keyframes grow{
+    0%{transform: scale(1.0);}
+    100%{transform: scale(1.1);}
 }
 .slideLeft{
     animation: slideLeft 0.5s ease-in-out forwards;
