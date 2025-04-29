@@ -305,7 +305,6 @@ body{
     margin: 500px auto;
     text-align: center;
     color: white;
-    max-width: 400px;
     width: 100%;
 }
 .contact-me h3{
@@ -434,7 +433,7 @@ span{
 }
 .contact-me{
     color: white;
-    width: 400px;
+    width: 350px;
     font-size: 0.8rem;
     margin-bottom: 20px;
     margin-top: 380px;
