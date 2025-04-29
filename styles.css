@@ -439,7 +439,7 @@ span{
     max-width: 350px;
     font-size: 0.8rem;
     margin: 200px auto;
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 .footer{
     color: white;
