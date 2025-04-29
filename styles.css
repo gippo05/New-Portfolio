@@ -207,7 +207,7 @@ body{
 }
 .portfolio-photo2 img{
     height: 450px;
-    border-radius: 10%;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     box-shadow: 0 0 30px #03DAC6;
 }
 .tech-stack {
