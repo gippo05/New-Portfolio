@@ -65,3 +65,5 @@ function typeWriter(){
     }
 }
 window.onload = typeWriter;
+
+
