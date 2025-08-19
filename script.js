@@ -17,35 +17,28 @@ year.innerHTML = yearForSpan
 
 
 // scroll animations
-window.addEventListener('scroll', () =>{
-    const scrolled = window.scrollY
-    const picture = document.getElementById('picture')
-    const about = document.getElementById('about')
-    
-    if (scrolled > 200){
-        picture.classList.add('slideRight')
-        about.classList.add('slideLeft')
-    }
-    else{
-        picture.classList.remove('slideRight')
-        about.classList.remove('slideLeft')
-    }
-})
-
 window.addEventListener('scroll', () => {
-    const projects = document.querySelectorAll('.project-card');
     const scrolled = window.scrollY;
+    const picture = document.getElementById('picture');
+    const about = document.getElementById('about');
+    const projects = document.querySelectorAll('.project-card');
 
-    if (scrolled > 1000) {
+    // Picture & About
+    if (scrolled > 200){
+        picture.classList.add('slideRight');
+        about.classList.add('slideLeft');
+    } else {
+        picture.classList.remove('slideRight');
+        about.classList.remove('slideLeft');
+    }
+
+    // Projects
+    if (scrolled > 500) {
         projects.forEach((project, index) => {
-            setTimeout(() => {
-                project.classList.add('slideUp');
-            }, index * 100); 
+            setTimeout(() => project.classList.add('slideUp'), index * 100);
         });
     } else {
-        projects.forEach(project => {
-            project.classList.remove('slideUp');
-        });
+        projects.forEach(project => project.classList.remove('slideUp'));
     }
 });
 
@@ -59,7 +52,7 @@ const type = document.getElementById('typed')
 
 function typeWriter(){
     if (index < text.length){
-        typed.innerHTML += text.charAt(index)
+        type.innerHTML += text.charAt(index)
         index++
         setTimeout(typeWriter, speed)
     }
