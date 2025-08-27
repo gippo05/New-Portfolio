@@ -73,6 +73,10 @@ body {
     border-radius: 10px;
 }
 
+span{
+    color: #03DAC6;
+}
+
 /* MEDIA QUERIES NAVBAR */
 @media(max-width: 900px) {
     .toggle-button {
@@ -253,7 +257,7 @@ body {
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 20px;
     margin: 0 50px 300px 50px;
     padding: 20px;
@@ -332,6 +336,8 @@ body {
 .footer {
     text-align: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 20px;
     padding: 20px;

@@ -45,7 +45,7 @@ window.addEventListener('scroll', () => {
 
 // TYPING ANIMATION
 
-let text = "Front-end focused, Back-end curious, Always building, Always Learning."
+let text = "Turning Ideas into Interactive Web Experiences. Always Building. Always Learning."
 const speed = 40
 let index = 0
 const type = document.getElementById('typed')
